@@ -6,6 +6,11 @@
 
 服务可以浏览该目录下的所有markdown笔记，类似一个文件资源浏览器。
 
+## features
+
+- 持久化统计访问量
+- 方便好用的模板（比如长图）
+
 ## How does it work
 
 - 用`markdown2`库将`md`文件转为html
