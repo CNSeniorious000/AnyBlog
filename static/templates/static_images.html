@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title> {{ title }} </title>
+    <script src="/static/scripts/lazy.js"></script>
+</head>
+<body>
+{% for i, j in request.__dict__.items() %}
+    <p>
+        <span> {{ i }} </span>
+        <span> {{ j }} </span>
+    </p>
+{% endfor %}
+</body>
+</html>
+
+<script>
+    let result = bottom_visible(document.firstElementChild)
+    console.log(result)
+    for (let i = 0; i < 100; i++) document.writeln(result.toString())
+</script>
