@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title> {{ title }} </title>
     <script src="/static/scripts/lazy.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.1/markdown-it.js"
+            integrity="sha512-yucm4wm2T2mZNzxtKGWQLTsMAGI+KNFRLsfFDNO9SqdMn9eauAORCybt1UnXRAAlrxJoFpdLSR9lhfuCKx22kQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
 {% for i, j in request.__dict__.items() %}
@@ -16,6 +19,8 @@
 </html>
 
 <script>
+    const md = markdownit();
+
     let result = bottom_visible(document.firstElementChild)
     console.log(result)
     for (let i = 0; i < 100; i++) document.writeln(result.toString())

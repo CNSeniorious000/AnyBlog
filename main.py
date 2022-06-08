@@ -3,7 +3,6 @@ from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import RedirectResponse, FileResponse
 from starlette.templating import Jinja2Templates
 from starlette.staticfiles import StaticFiles
-from markdown2 import markdown
 from jinja2 import FileSystemLoader, Environment
 
 env = Environment(loader=FileSystemLoader("static/templates"), enable_async=True)
